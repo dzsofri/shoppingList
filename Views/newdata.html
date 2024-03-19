@@ -1,0 +1,52 @@
+
+  <div class="container" >
+    <div class="belso mb-3">
+        <div class="mb-3">
+            <label for="" class="form-label">Kategória:</label>
+            <select class="form-select" onchange="Match();" aria-label="Default select example" id="select1" disabled=true></select>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Terméknév:</label>
+            <select class="form-select" onselect="disabled = false;" onchange="Match();" aria-label="Default select example" id="select2"></select>
+        </div>
+        <div class="mb-3" id="aras">
+          <label for="exampleFormControlInput1" class="form-label">Egységár</label>
+          <input type="text" class="form-control" id="ar" disabled=true placeholder="0">
+        </div>
+        <div class="mb-3">
+            <label for="amount" class="form-label">Mennyiség:</label>
+            <input type="number" class="form-control" id="amount" placeholder="">
+        </div>
+    </div>
+    <div class="belso2 mb-3">
+        <button type="button" class="btn btn-dark" onclick="addProduct()">Hozzáadás</button>
+    </div>
+  
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Kategória</th>
+            <th scope="col">Terméknév </th>
+            <th scope="col">Mennyiség</th>
+            <th scope="col">Egységár</th>
+            <th scope="col">Ár</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Product rows will be dynamically added here -->
+        </tbody>
+    </table>
+  
+    <br>
+  
+    <div class="belso2 mb-3">
+        <button type="button" class="btn btn-dark" onclick="saveListToDatabase()">Mentés</button>
+        <br>
+        <label for="price" style="font-size: 150%;;" class="form-label">Összesen:</label>
+        <div class="mb-3" style="max-width: 75%; margin:auto">
+            
+            <input type="text" class="form-control" id="price"  placeholder="">
+        </div>
+    </div>
+  </div>

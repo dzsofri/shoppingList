@@ -1,0 +1,79 @@
+body{
+    
+  background-color: #dadada;
+  font-size: 14px;
+}
+
+header{
+  
+  line-height: 120px;
+  min-height: 120px;
+  color: white;
+  text-shadow: 0 0 3px black;
+  text-align: center;
+  font-size: 300%;
+  background-color: #c38d9d;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+ 
+
+}
+nav{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+footer{
+ 
+  color: white;                                                                                                                                                                                                                                                                                                                                                                       
+  font-size: 100%;
+  letter-spacing: 3px;
+  text-align: center;
+  min-height: 40px;
+  background-color: #303434;
+  
+}
+
+main{
+  padding: 10px;
+  
+  margin-right: auto;
+}
+
+.container{
+  background-color: white;
+ 
+  
+  padding: 10px;
+  margin-top:  10px;
+  border-radius: 15px;
+}
+
+.felvetel{
+width: 40%;
+padding-bottom: 5%;
+}
+.megjelenites{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.miau{
+  display: flex;
+  
+}
+
+@media only screen and (max-width: 991px) {
+  .miau{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .felvetel{
+      width: 80%;
+      margin: auto;
+      }
+      .megjelenites{
+          width: 80%;
+          margin: auto;
+      }
+}
